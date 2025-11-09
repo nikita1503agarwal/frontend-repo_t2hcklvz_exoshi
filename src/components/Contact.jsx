@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Github, ExternalLink } from 'lucide-react';
 
 export default function Contact() {
   const [status, setStatus] = useState('');
@@ -51,20 +51,27 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-slate-600">Email</p>
-                <a href="mailto:hello@example.com" className="font-medium text-slate-900 hover:underline">
-                  hello@example.com
+                <a href="mailto:kvenkatasaitarun@gmail.com" className="font-medium text-slate-900 hover:underline">
+                  kvenkatasaitarun@gmail.com
                 </a>
               </div>
             </div>
             <div className="mt-6">
-              <p className="text-sm text-slate-600">Social</p>
-              <div className="mt-2 flex items-center gap-3 text-slate-700">
-                <a href="#" className="hover:underline">GitHub</a>
+              <p className="text-sm text-slate-600">Links</p>
+              <div className="mt-2 flex flex-wrap items-center gap-3 text-slate-700">
+                <a href="https://github.com/TarunKatragadda/Tests" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline">
+                  <Github size={16} /> Tests Repo
+                </a>
                 <span>•</span>
-                <a href="#" className="hover:underline">LinkedIn</a>
-                <span>•</span>
-                <a href="#" className="hover:underline">Twitter</a>
+                <a href="https://github.com/kolapineniSandeep/smart-Kubear" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline">
+                  <ExternalLink size={16} /> Smart-Kubear
+                </a>
               </div>
+            </div>
+
+            <div className="mt-6">
+              <p className="text-sm text-slate-600">Phone</p>
+              <p className="mt-1 text-slate-900">+1 (608) 338-9838</p>
             </div>
           </div>
         </div>

@@ -3,26 +3,26 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Realtime Collaboration Suite',
+    title: 'Smart-Kubear',
     description:
-      'A Figma-like canvas for teams with presence, comments, and multiplayer cursors powered by WebSockets.',
-    tags: ['React', 'WebSockets', 'Canvas', 'Node.js'],
-    link: '#',
-    repo: '#',
+      'Kubernetes automation toolkit with Helm charts and GitOps integration for standardized, scalable deployments.',
+    tags: ['Kubernetes', 'Helm', 'Argo CD', 'GitOps'],
+    link: 'https://github.com/kolapineniSandeep/smart-Kubear',
+    repo: 'https://github.com/kolapineniSandeep/smart-Kubear',
   },
   {
-    title: 'AI Content Platform',
+    title: 'Tests',
     description:
-      'Generative pipelines, embeddings search, and moderation tooling wrapped in a clean editor experience.',
-    tags: ['Next.js', 'FastAPI', 'Postgres', 'OpenAI'],
-    link: '#',
-    repo: '#',
+      'Collection of automation, scripting, and CI/CD experiments across AWS and GCP environments.',
+    tags: ['Python', 'Bash', 'CI/CD', 'AWS'],
+    link: 'https://github.com/TarunKatragadda/Tests',
+    repo: 'https://github.com/TarunKatragadda/Tests',
   },
   {
-    title: '3D Product Configurator',
+    title: 'Model Serving Infra',
     description:
-      'Interactive 3D model viewer with material switching, lighting controls, and AR handoff.',
-    tags: ['Three.js', 'Spline', 'GLTF', 'Vite'],
+      'Patterns for deploying ML models with A/B testing, versioning, and telemetry on SageMaker and Azure ML.',
+    tags: ['SageMaker', 'Azure ML', 'MLflow', 'KServe'],
     link: '#',
     repo: '#',
   },
@@ -34,8 +34,8 @@ export default function Projects() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">Featured Projects</h2>
-          <p className="mt-3 text-slate-600 max-w-2xl">
-            A selection of recent work focused on delightful interactions, performance, and maintainability.
+          <p className="mt-3 text-slate-600 max-w-3xl">
+            Work that highlights automation, reliability, and secure cloud architecture — from Kubernetes platforms to model serving pipelines.
           </p>
         </div>
 
@@ -52,10 +52,10 @@ export default function Projects() {
               <div className="flex items-start justify-between gap-4">
                 <h3 className="text-lg font-semibold text-slate-900">{p.title}</h3>
                 <div className="flex items-center gap-2 opacity-70 group-hover:opacity-100 transition-opacity">
-                  <a href={p.link} aria-label="Live" className="rounded-md p-1 hover:bg-slate-100">
+                  <a href={p.link} aria-label="Live" target="_blank" rel="noreferrer" className="rounded-md p-1 hover:bg-slate-100">
                     <ExternalLink size={18} />
                   </a>
-                  <a href={p.repo} aria-label="Repo" className="rounded-md p-1 hover:bg-slate-100">
+                  <a href={p.repo} aria-label="Repo" target="_blank" rel="noreferrer" className="rounded-md p-1 hover:bg-slate-100">
                     <Github size={18} />
                   </a>
                 </div>

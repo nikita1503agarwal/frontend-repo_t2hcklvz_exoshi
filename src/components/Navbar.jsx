@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <a href="#home" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400" />
-            <span className="font-semibold tracking-tight">My Portfolio</span>
+            <span className="font-semibold tracking-tight">Venkata Sai</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
